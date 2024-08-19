@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: skyblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#box {
+    height: 460px;
+  width: 270px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+#storiya {
+  height: 70px;
+  width: 100%;
+  padding: 5px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+#storiya::-webkit-scrollbar {
+  height: 6px;
+  display: none;
+}
+#storiya::-webkit-scrollbar-thumb {
+  background-color: black;
+  height: 100%;
+  width: 1px;
+  border-radius: 5px;
+}
+.story {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: linear-gradient(rgb(0, 17, 255), green, blue, orange);
+  display: inline-block;
+  margin-left: 4px;
+  overflow: hidden;
+  padding: 2.5px;
+}
+.story img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+#post {
+  height: calc(100% - 60px);
+}
+#dp {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+#photo {
+  padding: 2px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(red, green, blue, orange, green);
+}
+#photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+#top {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7px;
+}
+#top i {
+  font-size: 20px;
+}
+#userpost {
+  height: 220px;
+  width: 100%; 
+  margin-top: 5px;
+}
+#userpost img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#bottom{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7px;
+}
+#useraction{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap : 10px;
+}
+#useraction i{
+   font-size: 1.8vw; 
+}
+#cap2{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+     margin: 4px 0;
+    padding-left: 8px;
+}
+#caption img{
+     height: 100%;
+     width: 100%;
+     border-radius: 50%;
+}
+#other{
+      padding: 1.2px;
+    height: 17px;
+    width: 17px;
+      border-radius: 50%;
+     overflow: hidden;
+     background: linear-gradient(red ,green ,blue ,yellow , orange);
+}
+  h6{
+    padding-left: 10px;
+  }
+#save i{
+   font-size: 1.8vw;
+}
+#comments{
+    margin: 3px 0;
+}
+ span{    
+  color: rgb(95, 95, 95);
+}
+#full{
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+    display: none; 
+  background-position: center;
+  background-size:  cover ;
+  padding: 0 6px;
+}
+
+  #Progress{
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    margin-top: 8px;
+    border-radius: 50px;
+  }
+  #growth{
+  height: 100%;
+  width: 0%;
+  background-color: green;
+  }
+
+
+  #username {
+     justify-content: start;
+     gap: 10px;
+     margin-top: 10px;
+    display: flex;
+    align-items: center;
+
+  }
+  #username  h5{
+  color: white;
+  }
+
+  #username img{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+  }
+  #post  #kkk{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+      display: inline-block; 
+       font-size: 4vw;
+        scale: 0;
+   }
